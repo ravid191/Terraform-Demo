@@ -1,3 +1,13 @@
+# Configure the Microsoft Azure Provider
+provider "azurerm" {
+    version = "=2.0"
+    subscription_id = "f3ac07ee-3c16-4dcf-8380-5ea77abbabc8"
+    client_id       = "e2d64cdb-9898-490b-9733-77026a9d4d46"
+    client_secret   = "uyFoR2ee9=iORsP0Uz6EPlSO[Tk=Y-48"
+    tenant_id       = "add1c500-a6d7-4dbd-b890-7f8cb6f7d861"
+    features{}
+   }
+
 resource "azurerm_resource_group" "test" {
   name     = "${var.resource-group-name}"
   location = "${var.location}"
